@@ -1,0 +1,7 @@
+---
+layout: post
+title: "Fist post with Jekyll"
+---
+h1. First post with Jekyll
+
+This is some content for the post. This is just a test to check things out.
