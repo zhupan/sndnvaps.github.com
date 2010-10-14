@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Working with Jekyll"
+excerpt: |-
+
+ p. Been working with "Jekyll":http://github.com/mojombo/jekyll for a little bit now and I wanted to post something up on this blog as a place holder for my tech site up on "GitHub.com":http://github.com. This article uses Textile markup and is then translated through the Jekyll framework into a static HTML page.
+---
+
+h3. this is a heading
+
+p. This is some content for the post. This is just a test to check things out.
+
+p. Here is some ruby
+
+{% highlight ruby linenos %}
+# comment
+require 'foobar/test'
+
+class Test
+  def method
+    @test = User.find(params[:id])
+    :string => "#{this is a string} inside another string."
+    return this
+  end
+end
+{% endhighlight %}
+
+&nbsp; 
+
+p. *NOTE:* I don't know if I like the Pygment highlight feature of Jekyll. It lacks the ability to cleanly cature the source code form the code block for pasting somewhere else. Looking into other options.
