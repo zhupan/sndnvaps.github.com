@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}Jason's Tech Blog{% endif %}</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     
@@ -13,9 +13,9 @@
 	  <meta name="y_key" content="b4b5a7516e6cc069" />
 	  <meta name="msvalidate.01" content="D66E3F2CF2B4865D32249265E75AAFE1" />
 
-    <link href="http://media.wezbiz.net/blog/css/default.css" rel="stylesheet" type="text/css" />
+    <link href="http://media.jlwestsr.com/css/default.css" rel="stylesheet" type="text/css" />
+    <link href="http://media.jlwestsr.com/css/syntax.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    {{ content }}
-  </body>
-</html>
+    <!-- outer -->
+    <div id="outer">

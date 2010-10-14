@@ -1,5 +1,33 @@
 ---
-layout: default
-title: Jason's Tech Blog
+layout: page
+full_posts: 5
 ---
-    <p>This is the first stab at the hosting by github. :-)</p>
+
+<div class="posts">
+  {% for post in site.posts %}
+    {% if forloop.index < page.full_posts %}
+    <div class="post">
+      <div class="header">
+        <div class="date">{{ post.date | date_to_string}}</div>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </div>
+      <div class="body">
+        {% if post.excerpt %}
+          {{ post.excerpt | textilize }}
+        {% endif %}
+        {{ post.content }}
+      </div>
+    </div>
+    {% else %}
+      {% if forloop.index == page.full_posts %}
+      <h3>Older Posts</h3>
+      <table class="post-list" width="100%">
+      {% endif %}
+      <tr>
+        <th><a href="{{ post.url }}">{{ post.title }}</a></th>
+        <td>{{ post.date | date_to_string }}</td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+  </table>
+</div>            

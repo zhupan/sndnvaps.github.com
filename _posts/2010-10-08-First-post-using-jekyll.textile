@@ -1,7 +1,30 @@
 ---
 layout: post
 title: "Fist post with Jekyll"
+excerpt: |-
+
+  p=. !http://farm5.static.flickr.com/4130/4839290698_0111de2d19_z.jpg!
+
+  I finally took the plunge and built a Hackintosh.
+  
+  I was against the idea for the longest time, previously willing to trade a bit of cash for the extra stability and legality that an Apple-Mac-proper offers. However, when comparing a Mac Pro to a homegrown solution the extra bit of cash is now a serious few thousand dollars. 
 ---
-h1. First post with Jekyll
+
+h3. this is a heading
 
 This is some content for the post. This is just a test to check things out.
+
+Here is some ruby
+
+{% highlight ruby linenos %}
+# comment
+require 'foobar/test'
+
+class Test
+  def method
+    @test = User.find(params[:id])
+    :string => "#{this is a string} inside another string."
+    return this
+  end
+end
+{% endhighlight %}

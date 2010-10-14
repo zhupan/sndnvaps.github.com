@@ -1,7 +1,19 @@
 ---
-layout: default
+layout: page
 ---
-  <h1>{{ page.title }}</h1>
-  <p>
+<div class="post">
+  <div class="header">
+    <div class="date">{{ page.date | date_to_string}}</div>
+    <h2><a href="{{post.url}}">{{ page.title }}</a></h2>
+  </div>
+  <div class="body">
+    {% if page.excerpt %}
+      {{ page.excerpt | textilize }}
+    {% endif %}
     {{ content }}
-  </p>
+  </div>
+</div>
+
+<div id="discussion">
+  <script type="text/javascript" src="http://disqus.com/forums/jasonstechblog/combination_widget.js?num_items=5&hide_mods=0&color=blue&default_tab=people&excerpt_length=200"></script><a href="http://disqus.com/">Powered by Disqus</a>
+</div>

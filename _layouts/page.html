@@ -1,0 +1,25 @@
+{% include page_header.html %}
+{% include header.html %}
+{% include top_menu.html %}
+
+    	<div id="content">
+    	  
+    	  {% include right_column.html %}    	  
+
+    	  <!-- Primary Content -->
+    		<div id="primaryContentContainer">
+    			<div id="primaryContent">
+    			  {% if page.title %}
+    				<h2>{{page.title}}</h2>
+    				{% endif %}
+    				{{ content }}
+    			</div>
+    		</div>
+    		<!-- /Primary Content -->
+    		
+    		<div class="clear"></div>
+    	  
+    	</div>
+
+{% include footer.html %}
+{% include page_footer.html %}

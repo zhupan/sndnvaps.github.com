@@ -1,3 +1,15 @@
 _drafts/
 _site/
 *~
+*.swp
+
+# Ingore layout file - to be removed later
+index_layout.html
+
+# these folders are hosted on AWS S3 bucket.
+css/
+flv/
+img/
+js/
+swf/
+uploads/
