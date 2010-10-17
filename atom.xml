@@ -1,5 +1,9 @@
+---
+layout: nil
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+
   <id>http://jlwestsr.com</id>
   <title>Jason's Tech Blog</title>
   <link href="http://jlwestsr.com/atom.xml" rel="self"/>
@@ -9,7 +13,8 @@
     <name>Jason L. West, Sr.</name>
     <email>jlwestsr@gmail.com</email>
   </author>
-  {% for post in site.categories.articles %}
+
+  {% for post in site.posts %}
   <entry>
     <id>http://jlwestsr.com{{ post.id }}</id>
     <title>{{ post.title }}</title>
@@ -19,6 +24,7 @@
     <summary/>
   </entry>
   {% endfor %}
+
 </feed>
 
 
