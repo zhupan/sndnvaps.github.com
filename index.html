@@ -11,11 +11,17 @@ full_posts: 5
         <div class="date">{{ post.date | date_to_string}}</div>
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       </div>
+      <div class="meta-header">
+        
+      </div>
       <div class="body">
         {% if post.excerpt %}
           {{ post.excerpt | textilize }}
         {% endif %}
         {{ post.content }}
+      </div>
+      <div class="meta-footer">
+        
       </div>
     </div>
     {% else %}

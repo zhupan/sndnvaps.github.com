@@ -1,4 +1,6 @@
 ---
-layout: default
+layout: page
 title: "Jason's Tech Blog - About"
 ---
+
+h1. Under Construction

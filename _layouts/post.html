@@ -6,14 +6,18 @@ layout: page
     <div class="date">{{ page.date | date_to_string}}</div>
     <h2><a href="{{post.url}}">{{ page.title }}</a></h2>
   </div>
+  <div class="meta-header">
+    
+  </div>
   <div class="body">
     {% if page.excerpt %}
       {{ page.excerpt | textilize }}
     {% endif %}
     {{ content }}
-    <p>Page ID: {{page.id}}</p>
   </div>
-  
+  <div class="meta-footer">
+    
+  </div>
 </div>
 
 <div id="discussion">
