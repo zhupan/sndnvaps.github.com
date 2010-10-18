@@ -35,4 +35,4 @@ h3. Nice To Haves
 # Auto-generated sitemap.xml
 # Ability to have the site switch layouts depending on the useragent that is being used for viewing the website. (Desktop Browser, Mobile Browser, etc.)
 
-p{text-size:small;}. *Last Updated:* (working on displaying the date of the when the file was last modified.)
+p{font-size:70%;}. *Last Updated:* (working on displaying the date of the when the file was last modified.)
