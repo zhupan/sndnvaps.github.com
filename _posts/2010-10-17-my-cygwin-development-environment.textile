@@ -51,7 +51,7 @@ Okay now that we have gone through the setup twice lets go through one last time
 ** + inetutils
 ** + openssh
 * Shells
-** + mintty
+** + mintty ("http://code.google.com/p/mintty/":http://code.google.com/p/mintty/)
 ** + zsh
 
 h3. Ruby Development Environment
