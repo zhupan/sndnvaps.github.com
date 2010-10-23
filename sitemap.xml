@@ -1,47 +1,47 @@
 ---
-rooturi: http://jlwestsr.com
+
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>{{ page.rooturi }}/</loc>
+      <loc>{{ site.baseuri }}/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1</priority>
    </url>
    <url>
-      <loc>{{ page.rooturi }}/about.html</loc>
+      <loc>{{ site.baseuri }}/about.html</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>{{ page.rooturi }}/archives.html</loc>
+      <loc>{{ site.baseuri }}/archives.html</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>{{ page.rooturi }}/blank.html</loc>
+      <loc>{{ site.baseuri }}/blank.html</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>{{ page.rooturi }}/contact.html</loc>
+      <loc>{{ site.baseuri }}/contact.html</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>{{ page.rooturi }}/ps/</loc>
+      <loc>{{ site.baseuri }}/ps/</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>daily</changefreq>
       <priority>1</priority>
    </url>
 {% for post in site.posts %}
    <url>
-      <loc>{{ page.rooturi }}{{ post.url }}</loc>
+      <loc>{{ site.baseuri }}{{ post.url }}</loc>
       <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>

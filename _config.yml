@@ -1,3 +1,4 @@
+baseuri: http://jlwestsr.com
 auto: true
 lsi: true
 markdown: rdiscount
