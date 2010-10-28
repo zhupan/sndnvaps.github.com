@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: http://jlwestsr.com/atom.xml
+Sitemap: http://jlwestsr.com/sitemap.xml
