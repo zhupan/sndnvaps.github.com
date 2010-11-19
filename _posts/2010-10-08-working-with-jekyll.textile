@@ -13,7 +13,7 @@ p. This is some content for the post. This is just a test to check things out.
 
 p. Here is some ruby
 
-{% highlight ruby linenos %}
+{% highlight ruby linenos=table %}
 # comment
 require 'foobar/test'
 
