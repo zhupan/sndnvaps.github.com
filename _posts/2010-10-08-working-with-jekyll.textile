@@ -25,10 +25,11 @@ class Test
   end
 end
 {% endhighlight %}
+<br />
 
-p. *NOTE:* I don't know if I like the Pygment highlight feature of Jekyll. It lacks the ability to cleanly cature the source code form the code block for pasting somewhere else. Looking into other options. 
+p. *NOTE:* [-I don't know if I like the Pygment highlight feature of Jekyll. It lacks the ability to cleanly capture the source code from the code block. Looking into other options.-][+Thanks to Matthias for the great info on getting the line numbers to be seperate from the code block for copying. Does anyone have a link(s) for Pygment that better explains its features?+]
 
-My "syntax.css":http://media.jlwestsr.com/css/syntax.css file. (To download Right-Click the link and do a "Save As")
+p. My "syntax.css":http://media.jlwestsr.com/css/syntax.css file. (To download Right-Click the link and do a "Save As")
 
 h3. Nice To Haves
 
