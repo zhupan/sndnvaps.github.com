@@ -13,3 +13,13 @@ img/
 js/
 swf/
 uploads/
+
+# Redcar
+.redcar/
+# Aptana/Eclipse
+.profile
+# Netbeans
+
+# ActiveState Komodo
+*.komodo
+# Adobe Dreamweaver
