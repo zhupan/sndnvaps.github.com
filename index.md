@@ -1,15 +1,12 @@
 ---
 layout: page
-title: Home
+title: "Home"
 description:
 tagline:
 group:
 category:
 tags:
-exerpt: |-
-
-
-
+excerpt: |-
 ---
 {% include JB/setup %}
 
