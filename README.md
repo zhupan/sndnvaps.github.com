@@ -1,3 +1,4 @@
-# jlwestsr.github.com
+## jlwestsr.github.com
 
-This is a start README for repository. More to come soon.
+This site has gone through a complete redesign of using the jekyll-bootstrap github.com project.
+
