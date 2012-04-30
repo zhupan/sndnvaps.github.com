@@ -1,9 +1,15 @@
 ---
 layout: post
 title: "New Blog Layout Coming Soon!"
+tagline:
+category:
+tags: 
 excerpt: |-
+
   p. I recently discovered that the layout for this site breaks in IE6 and a has quirks in other browsers so I am working on a new layout that will be coming soon.
+
 ---
+{% include JB/setup %}
 
 h3. Fixing a Bad Layout
 

@@ -1,5 +1,6 @@
 _drafts/
-_site/
+_site/*
+_theme_packages/*
 *~
 *.swp
 
@@ -23,3 +24,14 @@ uploads/
 # ActiveState Komodo
 *.komodo
 # Adobe Dreamweaver
+
+# Redmine
+.idea/
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc

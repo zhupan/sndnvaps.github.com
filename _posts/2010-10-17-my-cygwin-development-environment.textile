@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "My CYGWIN Development Environment for Windows 7 Professional"
+title: "My CYGWIN Development Environment"
+tagline: "CYGWIN on Windows 7 Professional for my development needs"
+category: 
+tags: [cygwin, windows 7, ruby, ruby on rails, python, django]
 excerpt: |-
 
   p. This is a list of steps I used for getting CYGWIN installed on my Windows 7 Professional crap machine in order to have a Linux terminal that I could use in my software development for Ruby &amp; Python. This is just an example of a CYGWIN setup &amp; cofiguration for getting started developing and is in no means intended to be a best practice. I welcome the feed back on how to improve on this setup or any questions you might have. 
   
 ---
+{% include JB/setup %}
 
 h3. Operating System and Machine Type
 

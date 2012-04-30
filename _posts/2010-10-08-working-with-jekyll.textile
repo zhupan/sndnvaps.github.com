@@ -1,13 +1,26 @@
 ---
 layout: post
-title: "Working with Jekyll"
-modified_on: 
+title: "Working with Jekyll and Textile"
+description: "Example page for working with Jekyll and Textile"
+tagline: "Textile Scratch Pad"
+category: 
+tags: [jekyll, ruby, pygment, github, python, textile]
 excerpt: |-
 
  p. Been working with "Jekyll":http://github.com/mojombo/jekyll for a little bit now and I wanted to post something up on this blog as a place holder for my tech site up on "GitHub.com":http://github.com. This article uses Textile markup and is then translated through the Jekyll framework into a static HTML page.
+ 
 ---
+{% include JB/setup %}
 
-h3. this is a heading
+h3. About this Page
+
+p. This is a page that I use for testing out Textile composition in working with the Jekyll. This is just a scratch pad and it will include resources from research at the bottom of the page.
+
+h1. This is an H1
+
+h2. This is an H2
+
+h3. This is an H3
 
 p. This is some content for the post. This is just a test to check things out.
 
