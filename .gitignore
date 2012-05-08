@@ -1,6 +1,5 @@
-_drafts/
+_drafts/*
 _site/*
-_theme_packages/*
 *~
 *.swp
 Gemfile.lock
