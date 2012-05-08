@@ -4,9 +4,10 @@ title: "Home"
 description:
 tagline:
 group:
-category:
+category: test
 tags:
 excerpt: |-
+
 ---
 {% include JB/setup %}
 
