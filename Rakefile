@@ -8,8 +8,10 @@ CONFIG = {
   'version' => "0.2.13",
   'themes' => File.join(SOURCE, "_includes", "themes"),
   'layouts' => File.join(SOURCE, "_layouts"),
+  'drafts' => File.join(SOURCE, "_drafts"),
   'posts' => File.join(SOURCE, "_posts"),
   'post_ext' => "md",
+  'page_ext' => "md",
   'theme_package_version' => "0.1.0"
 }
 
@@ -77,7 +79,7 @@ desc "Create a new page."
 task :page do
   name = ENV["name"] || "new-page.md"
   filename = File.join(SOURCE, "#{name}")
-  filename = File.join(filename, "index.md") if File.extname(filename) == ""
+  filename = File.join(filename, "index.#{CONFIG['post_ext']}") if File.extname(filename) == ""
   title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
