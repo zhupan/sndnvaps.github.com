@@ -39,12 +39,12 @@ body {
 
 .highlight, .highlight pre { 
   /* line-height: 1.2em; */
-  background: none repeat scroll 0 0 #323232;
+  background: none repeat scroll 0 0 #282828;
   color: #ffffff;
   padding-left: 1px;
 }
 
-.highlight .c { color: #999988; font-style: italic; } /* Comment */
+.highlight .c { color: #BC9458; font-style: italic; } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2; } /* Error */
 .highlight .k { /* Keyword */
   color: #cc7833;
@@ -92,7 +92,7 @@ body {
   color: #ffc66d; 
 }
 .highlight .nn { color: #555555; } /* Name.Namespace */
-.highlight .nt { color: #000080; } /* Name.Tag */
+.highlight .nt { color: #E8BF6A; } /* Name.Tag */
 .highlight .nv { color: #008080; } /* Name.Variable */
 .highlight .ow { font-weight: bold; } /* Operator.Word */
 .highlight .w { color: #bbbbbb; } /* Text.Whitespace */

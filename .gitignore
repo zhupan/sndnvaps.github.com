@@ -1,5 +1,6 @@
 _drafts/*
 _site/*
+.sass-cache/*
 *~
 *.swp
 Gemfile.lock
@@ -16,7 +17,7 @@ uploads/
 # Redcar
 .redcar/
 # Aptana/Eclipse
-.profile
+.project
 # Netbeans
 
 # ActiveState Komodo

@@ -1,0 +1,283 @@
+/** Pygment CSS **/
+/* This is work-in-progress */
+/* This theme is based on RailsCasts.com Ryan Bates for TextMate */
+.content table.highlighttable {
+  /* line-height: 1.2em;*/
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-collapse: collapse;
+  font-family: "Courier New", monospace;
+  width: 100%;
+  /* border: 1px solid #cccccc; */
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+  border-spacing: 0;
+  border-color: inherit;
+
+}
+.content table.highlighttable td {
+  line-height: 1.2em;
+  border: 0 none;
+  vertical-align: top;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  background: none repeat scroll 0 0 #FFFFFF;
+}
+.content table.highlighttable .linenos .linenodiv {
+  line-height: 1.2em;
+}
+
+.highlight, .highlight pre { 
+  /* line-height: 1.2em; */
+  background: none repeat scroll 0 0 #F3F3F3;
+  color: #ffffff;
+  padding-left: 1px;
+}
+
+.highlight {  
+.hll {
+    background-color: #FFFFCC;
+}
+.c {
+    color: #8F5902;
+    font-style: italic;
+}
+.err {
+    border: 1px solid #EF2929;
+    color: #A40000;
+}
+.g {
+    color: #000000;
+}
+.k {
+    color: #204A87;
+    font-weight: bold;
+}
+.l {
+    color: #000000;
+}
+.n {
+    color: #000000;
+}
+.o {
+    color: #CE5C00;
+    font-weight: bold;
+}
+.x {
+    color: #000000;
+}
+.p {
+    color: #000000;
+    font-weight: bold;
+}
+.cm {
+    color: #8F5902;
+    font-style: italic;
+}
+.cp {
+    color: #8F5902;
+    font-style: italic;
+}
+.c1 {
+    color: #8F5902;
+    font-style: italic;
+}
+.cs {
+    color: #8F5902;
+    font-style: italic;
+}
+.gd {
+    color: #A40000;
+}
+.ge {
+    color: #000000;
+    font-style: italic;
+}
+.gr {
+    color: #EF2929;
+}
+.gh {
+    color: #000080;
+    font-weight: bold;
+}
+.gi {
+    color: #00A000;
+}
+.go {
+    color: #000000;
+    font-style: italic;
+}
+.gp {
+    color: #8F5902;
+}
+.gs {
+    color: #000000;
+    font-weight: bold;
+}
+.gu {
+    color: #800080;
+    font-weight: bold;
+}
+.gt {
+    color: #A40000;
+    font-weight: bold;
+}
+.kc {
+    color: #204A87;
+    font-weight: bold;
+}
+.kd {
+    color: #204A87;
+    font-weight: bold;
+}
+.kn {
+    color: #204A87;
+    font-weight: bold;
+}
+.kp {
+    color: #204A87;
+    font-weight: bold;
+}
+.kr {
+    color: #204A87;
+    font-weight: bold;
+}
+.kt {
+    color: #204A87;
+    font-weight: bold;
+}
+.ld {
+    color: #000000;
+}
+.m {
+    color: #0000CF;
+    font-weight: bold;
+}
+.s {
+    color: #4E9A06;
+}
+.na {
+    color: #C4A000;
+}
+.nb {
+    color: #204A87;
+}
+.nc {
+    color: #000000;
+}
+.no {
+    color: #000000;
+}
+.nd {
+    color: #5C35CC;
+    font-weight: bold;
+}
+.ni {
+    color: #CE5C00;
+}
+.ne {
+    color: #CC0000;
+    font-weight: bold;
+}
+.nf {
+    color: #000000;
+}
+.nl {
+    color: #F57900;
+}
+.nn {
+    color: #000000;
+}
+.nx {
+    color: #000000;
+}
+.py {
+    color: #000000;
+}
+.nt {
+    color: #204A87;
+    font-weight: bold;
+}
+.nv {
+    color: #000000;
+}
+.ow {
+    color: #204A87;
+    font-weight: bold;
+}
+.w {
+    color: #F8F8F8;
+    text-decoration: underline;
+}
+.mf {
+    color: #0000CF;
+    font-weight: bold;
+}
+.mh {
+    color: #0000CF;
+    font-weight: bold;
+}
+.mi {
+    color: #0000CF;
+    font-weight: bold;
+}
+.mo {
+    color: #0000CF;
+    font-weight: bold;
+}
+.sb {
+    color: #4E9A06;
+}
+.sc {
+    color: #4E9A06;
+}
+.sd {
+    color: #8F5902;
+    font-style: italic;
+}
+.s2 {
+    color: #4E9A06;
+}
+.se {
+    color: #4E9A06;
+}
+.sh {
+    color: #4E9A06;
+}
+.si {
+    color: #4E9A06;
+}
+.sx {
+    color: #4E9A06;
+}
+.sr {
+    color: #4E9A06;
+}
+.s1 {
+    color: #4E9A06;
+}
+.ss {
+    color: #4E9A06;
+}
+.bp {
+    color: #3465A4;
+}
+.vc {
+    color: #000000;
+}
+.vg {
+    color: #000000;
+}
+.vi {
+    color: #000000;
+}
+.il {
+    color: #0000CF;
+    font-weight: bold;
+}
+}
+
+
+

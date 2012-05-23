@@ -4,12 +4,14 @@ title: "Home"
 description:
 tagline:
 group:
-category: test
-tags:
+category: tags
+test:
 excerpt: |-
 
 ---
 {% include JB/setup %}
+
+
 
 ## Welcome
 
