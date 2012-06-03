@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "ColdFusion Cheatsheet"
-description: ""
+description: "Coldfusion Cheatsheet"
+
 ---
 {% include JB/setup %}

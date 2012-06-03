@@ -1,0 +1,7 @@
+---
+layout: page
+title: "Textile Cheatsheet"
+description: "A Textile Cheatsheet"
+
+---
+{% include JB/setup %}
