@@ -2,7 +2,7 @@
 layout: post
 title: "My CYGWIN Development Environment"
 tagline: "CYGWIN on Windows 7 Professional for my development needs"
-category: "Development"
+category: "development"
 tags: [cygwin, windows 7, ruby, ruby on rails, python, django]
 
 ---
