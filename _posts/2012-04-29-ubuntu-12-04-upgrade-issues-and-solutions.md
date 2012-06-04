@@ -3,7 +3,6 @@ layout: post
 title: "Resolving Ubuntu 12.04 Upgrade Issues"
 description: "Documenting issues resolved with a Ubuntu 12.04 upgrade"
 tagline: "Documenting issues resolved with a Ubuntu 12.04 upgrade"
-category: general
 tags: [ubuntu, linux]
 exerpt: |-
 

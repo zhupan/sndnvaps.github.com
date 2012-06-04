@@ -2,7 +2,6 @@
 layout: post
 title: "New Blog Layout Coming Soon!"
 tagline:
-category: general
 tags: [jekyll, twitter-bootstrap]
 
 ---

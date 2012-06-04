@@ -23,15 +23,10 @@
       <ul class="nav nav-list">
         
         <li class="nav-header">Sections</li>
-        <li><a href="/posts.html">Blog Posts</a></li>
-        <li><a href="/cheatsheets/">Cheat-Sheets</a></li>
-        <li><a href="/cookbooks/">Cook-Books</a></li>
+        <li><a href="/posts/">Blog Posts</a></li>
+        <li><a href="/cheatsheets/">Cheatsheets</a></li>
+        <li><a href="/cookbooks/">Cookbooks</a></li>
       
-        <li class="nav-header">Categories</li>
-      {% unless site.categories == empty %}
-        {% assign categories_list = site.categories %}
-        {% include JB/categories_list %}
-      {% endunless %}
       
         <li class="nav-header">Tags</li>
       {% unless site.tags == empty %}
