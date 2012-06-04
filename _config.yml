@@ -9,7 +9,7 @@ pygments: true
 
 # This is the default format.
 # for more information see https://github.com/mojombo/jekyll/wiki/Permalinks
-permalinks: /:categories/:year/:month/:day/:title/
+permalinks: /posts/:year/:month/:day/:title/
 
 #
 # Themes are encouraged to use these universal variables
