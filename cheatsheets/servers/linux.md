@@ -7,9 +7,9 @@ tagline: "A place to document the Ruby language and resources"
 ---
 {% include JB/setup %}
 
-# The Linux Cheatsheet
+This is a work in progress so bare with the content as it added. I use Ubuntu for my platforms so all of the manpage links use the Ubuntu documentation. If anyone has any suggestions on a better resource for the manpages drop me a line and let me know.
 
-## ps [Manpage](http://manpages.ubuntu.com/manpages/precise/en/man1/ps.1posix.html)
+### ps <small>[(manpage)](http://manpages.ubuntu.com/manpages/precise/en/man1/ps.1posix.html)</small>
 
 **ps** displays information about a selection of the active processes. If you want a repetitive update of the selection and the displayed information, use top(1) instead.
 
@@ -25,7 +25,8 @@ However more typical usage is with a pipe or with pgrep:
 
 {% highlight bash %}
 $ ps axww | grep cron
-  586 ?? Is 0:01.48 /usr/sbin/cron -s
+>> 586 ?? Is 0:01.48 /usr/sbin/cron -s
+
 $ ps axjf                   # All processes in a tree format (Linux)
 $ ps aux | grep 'ss[h]'     # Find all ssh pids without the grep pid
 $ pgrep -l sshd             # Find the PIDs of processes by (part of) name
@@ -52,17 +53,12 @@ $ ps -A -ostat,ppid,pid,cmd | grep -e '^[Zz]'
 To Kill the parents of the Zombies we can run the following script:
 
 {% highlight bash %}
-kill -HUP `ps -A -ostat,ppid,pid,cmd | grep -e '^[Zz]' | awk '{print $2}'` 
+$ kill -HUP `ps -A -ostat,ppid,pid,cmd | grep -e '^[Zz]' | awk '{print $2}'` 
 {% endhighlight %}
 
-## wget
+### wget <small>[(manpage)](http://manpages.ubuntu.com/manpages/precise/en/man1/wget.1.html)</small>
 
-### Download entire websites easy
+#### Download entire websites easy
 
-* Basic usage: 'wget http://foobar.com`
+* Basic usage: `wget http://foobar.com`
 * Download sites recusively: `wget -r http://foobar.com`
-
-
-{% highlight bash %}
-
-{% endhighlight %}

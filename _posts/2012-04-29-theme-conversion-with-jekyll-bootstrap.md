@@ -2,8 +2,7 @@
 layout: post
 title: "Theme Conversion with Jekyll-Bootstrap"
 description: "Theme Conversion with Jekyll-Bootstrap"
-tagline: 
-category: 
+category: Development
 tags: [jekyll, ruby, python, jekyll-bootstrap, markdown]
 excerpt:
 

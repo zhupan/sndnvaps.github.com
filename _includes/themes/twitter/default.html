@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <title>JLWestSr.com{% if page.title %} | {{ page.title }}{% endif %}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% else %}<meta name="description" content="This is a default description if no description is supplied.">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -46,17 +46,18 @@
           </a>
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <div class="nav-collapse">
-            <ul class="nav">
-              {% assign pages_list = site.pages %}
-              {% assign group = 'navigation' %}
-              {% include JB/pages_list %}
+            <ul class="nav pull-right">
+              <li><a href="/" title="Home Page">Home</a></li>
+              <li><a href="/posts.html" title="Blog">Blog</a></li>
+              <li><a href="/archives.html" title="Blog Archives">Archives</a></li>
+              <li><a href="/about.html" title="About this site">About</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
 
       {{ content }}
 
@@ -74,7 +75,7 @@
 
     {% include JB/analytics %}
 
-        <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/jquery-1.7.2.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-transition.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-alert.js"></script>
@@ -88,5 +89,10 @@
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-collapse.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-carousel.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap-typeahead.js"></script>
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-a8af985-e924-3c14-a89c-569371e5fbf"}); </script>
+    
   </body>
 </html>

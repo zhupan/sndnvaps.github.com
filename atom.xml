@@ -11,7 +11,7 @@ layout: nil
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <author>
     <name>Jason L. West, Sr.</name>
-    <email>jlwestsr@gmail.com</email>
+    <email>jwest@wezbiz.com</email>
   </author>
 
   {% for post in site.posts %}

@@ -2,7 +2,7 @@
 # for more information see https://github.com/mojombo/jekyll/wiki/Permalinks
 permalinks: /:categories/:year/:month/:day/:title
 
-exclude: [".rvmrc", .".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".project", ".rvmrc", ".rbenv-version", "README.md", "README.odt", "Gemfile", "Gemfile.lock", "Rakefile"]
 
 baseuri: http://jlwestsr.com
 auto: true

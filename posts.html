@@ -1,0 +1,31 @@
+---
+layout: page
+full_posts: 10
+
+---
+{% include JB/setup %}
+
+{% for post in site.posts %}
+  {% if forloop.index < page.full_posts %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <div class="date"><span>Posted on: {{ post.date | date: "%B %d, %Y" }}</span></div>
+  <div class="row">&nbsp;</div>
+
+  {% if post.excerpt %}
+    {{ post.excerpt | markdownify }}
+  {% else %}
+      {{ post.content }}
+  {% endif %}
+
+  <hr>
+  <small>
+    <strong>Share this:</strong>&nbsp;&nbsp;
+    <span class='st_facebook' displayText='Facebook'></span>
+    <span class='st_twitter' displayText='Tweet'></span>
+    <span class='st_linkedin' displayText='LinkedIn'></span>
+    <span class='st_email' displayText='Email'></span>
+    <span class='st_sharethis' displayText='ShareThis'></span>
+  </small>
+  <hr>
+  {% endif %}
+{% endfor %}
