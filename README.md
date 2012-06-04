@@ -1,4 +1,4 @@
-## jlwestsr.github.com
+## jlwestsr.github.com (ver 0.1.0)
 
 This site has gone through a complete redesign of using the jekyll-bootstrap 
 github.com project.
@@ -24,3 +24,7 @@ cases that seem out of the ordinary I will be documenting the process of solving
 This site is dedicated to my son, Jason L West Jr., in the hopes that he will find
 this information useful as he continues his journey into the realm of programming 
 and the IT industry.
+
+## Versioning of Source Code
+
+This application uses the [Open ACS versioning system](http://openacs.org/doc/eng-standards-versioning.html)
