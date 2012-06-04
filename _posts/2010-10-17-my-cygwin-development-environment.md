@@ -49,23 +49,23 @@ time and select some additional packages that we will need.
 install.
 
 * Database
-** + libsqlite3-devl
-** + libsqlite3_0
-** + sqlite3
+  * \+ libsqlite3-devl
+  * \+ libsqlite3_0
+  * \+ sqlite3
 * Editors
-** + gvim
-** + nano
-** + vim
-** + xemacs
+  * \+ gvim
+  * \+ nano
+  * \+ vim
+  * \+ xemacs
 * Graphics
-** + ImageMagick
+  * \+ ImageMagick
 * Net
-** + curl
-** + inetutils
-** + openssh
+  * \+ curl
+  * \+ inetutils
+  * \+ openssh
 * Shells
-** + mintty ([http://code.google.com/p/mintty/](http://code.google.com/p/mintty/))
-** + zsh
+  * \+ mintty ([http://code.google.com/p/mintty/](http://code.google.com/p/mintty/))
+  * \+ zsh
 
 ### Ruby Development Environment
 
