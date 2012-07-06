@@ -37,4 +37,3 @@ These are cheatsheets that I am using for my own personal use. I wanted to publi
 
 * [Markdown](/cheatsheets/markup/markdown.html)
 * [Textile](/cheatsheets/markup/textile.html)
-
