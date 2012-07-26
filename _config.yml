@@ -4,7 +4,7 @@ exclude: [".project", ".rvmrc", ".rbenv-version", "README.md", "README.odt", "Ge
 baseuri: http://jlwestsr.com
 auto: true
 lsi: false
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 
 # This is the default format.

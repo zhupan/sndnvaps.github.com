@@ -5,13 +5,13 @@ description: "Cheatsheets by Jason L West Sr"
 tagline: ""
 
 ---
+<small>[Home](/) >> Cheatsheets</small>
 
 These are cheatsheets that I am using for my own personal use. I wanted to publish these here so that they are accessable to the public. Enjoy!
 
 ## Server Technologies
 
-* [Linux/Unix](/cheatsheets/servers/linux.html)
-* [Windows Server 2003](/cheatsheets/servers/windows-server-2003.html)
+* [Linux/Unix](/cheatsheets/servers/linux/)
 
 ## Programming Languages
 

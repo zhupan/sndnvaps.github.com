@@ -7,8 +7,6 @@ tagline: "A cheatsheet for command line tools in the Linux environment"
 ---
 {% include JB/setup %}
 
-This is a work in progress so bare with the content as it added. I use Ubuntu for my platforms so all of the manpage links use the Ubuntu documentation. If anyone has any suggestions on a better resource for the manpages drop me a line and let me know.
-
 ### ps <small>[(manpage)](http://manpages.ubuntu.com/manpages/precise/en/man1/ps.1posix.html)</small>
 
 **ps** displays information about a selection of the active processes. If you want a repetitive update of the selection and the displayed information, use top(1) instead.
@@ -54,21 +52,4 @@ To Kill the parents of the Zombies we can run the following script:
 
 {% highlight bash %}
 $ kill -HUP `ps -A -ostat,ppid,pid,cmd | grep -e '^[Zz]' | awk '{print $2}'` 
-{% endhighlight %}
-
-### wget <small>[(manpage)](http://manpages.ubuntu.com/manpages/precise/en/man1/wget.1.html)</small>
-
-#### Download entire websites easy
-
-* Basic usage: `wget http://foobar.com`
-* Download sites recusively: `wget -r http://foobar.com`
-
-
-### rsync <small>[(manpage)]()</small>
-
-#### Sync directory with remote server
-
-{% highlight bash %}
-# Sync current directory with remote server specific directory
-rsync -zvr 
 {% endhighlight %}
