@@ -14,7 +14,7 @@ group: navigation
 
 <li><a href="http://weibo.com/210124187">Sina Weibo</a></li>
 <li><a href="https://github.com/sndnvaps/">Github</a></li>
-<li><a href="https://gist.github.com/sndnvaps/"<Gist</a></li>
+<li><a href="https://gist.github.com/sndnvaps/">Gist</a></li>
 
 </ul>
 
