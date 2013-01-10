@@ -1,0 +1,104 @@
+---
+layout: post
+uri: /posts/2012/07
+permalink: /posts/2012/07/index.html
+title: "在 debian 6.0.6 32 bit系统中安装TL-WN821N v3的驱动"
+tags: [wireless,linux]
+tagline: "在 debian 6.0.6 32 bit系统中安装TL-WN821N v3的驱动"
+description: "在 debian 6.0.6 32 bit系统中安装TL-WN821N v3的驱动"
+exerpt: |-
+
+---
+
+<h3 id="catalog">目录</h3>
+*    [系统参数](#descriptions)
+*    [TL-WN821N V3参数](#wifi-des)
+*    [需要的源代码和固件](#prepare)
+*    [参考资料](#article)
+*    [源代码下载地址](#source)
+* * *
+
+<h3 id="descriptions"> 系统参数</h3>
+<pre>
+   <code>
+OS: debian 6.0.6 32bit
+kernel version: 2.6.32-5-686
+gcc version: 4.4.3 
+
+  </code>
+</pre>
+
+<h3 id="wifi-des">TL-WN821N V3 参数</h3>
+
+<pre>
+   <code>
+         TP-LINK TL-WN821N v3
+Interface: USB
+ID: 0cf3:7015 (1 addl. devices)
+Windows: USB\VID_0CF3&PID_7015
+FCC ID: TE7WN821NV3
+Chipset: Atheros AR9002U-2NG
+Chip 1: <ins>Atheros AR7010</ins>
+Chip 2: <ins>Atheros AR9287</ins>
+           Linux driver
+<ins>ath9k_htc (in compat-wireless)</ins>
+<ins>(see also passys)</ins>
+bgn, 2x2:2
+OUI: none specified
+
+  </code>
+</pre>
+
+<h3 id="prepare">需要的源代码和固件</h3>
+
+从芯片可以看出，需要用到的源代码包含在compat-wireless源代码中，要用到的固件为ar7010.fw(<ins>最新的固件为htc_7010.fw</ins>)
+
+我下载的源代码为:<ins>compat-wireless-2012-11-04-pc.tar.bz2</ins>
+{% highlight bash %}
+cd /home/username/work 
+
+wget http://wireless.kernel.org/download/compat-wireless-2.6/compat-wireless-2012-11-04-pc.tar.bz2 
+{% endhighlight %}
+
+下载要用的固件：
+{% highlight bash %}
+wget http://wireless.kernel.org/download/htc_fw/1.3/htc_7010.fw
+wget http://wireless.kernel.org/download/htc_fw/1.3/htc_9271.fw
+
+{% endhighlight %}
+
+
+下面是编译和安装：
+{% highlight bash %}
+cd /home/username/work 
+tar -xjf compat-wireless-2012-11-04-pc.tar.bz2 
+cd compat-wirelsss-2012-11-04-pc
+./scripts/driver-select ath9k_htc
+
+make && make install 
+
+cp htc_7010.fw htc_9271.fw /lib/firmware #把固件复制到/lib/firmware目录下面
+
+{% endhighlight %}
+
+下面有两种方法可以使安装的无线模块生效：
+
+-1 重启机器
+
+-2 使用下面的命令：
+{% highlight bash %}
+  sudo modprobe ath9k
+  sudo modprobe ath9k_common
+  sudo modprobe ath9k_hw
+  sudo modprobe ath9k_htc
+{% endhighlight %}
+
+
+<h3 id="article">参考资料：</h3>
+1. [http://www.wikidevi.com/wiki/TP-LINK_TL-WN821N_v3](http://www.wikidevi.com/wiki/TP-LINK_TL-WN821N_v3)
+2. [http://www.linuxidc.com/Linux/2010-09/28802.htm](http://www.linuxidc.com/Linux/2010-09/28802.htm)
+3. [http://wiki.debian.org/ath9k_htc](http://wiki.debian.org/ath9k_htc)
+4. [http://blog.sina.com.cn/s/blog_59cf67260100qqmf.html](http://blog.sina.com.cn/s/blog_59cf67260100qqmf.html)
+<h3 id="source">源代码下载地址：</h3>
+1. [http://wireless.kernel.org/download/compat-wireless-2.6/](http://wireless.kernel.org/download/compat-wireless-2.6/)
+2. [http://wireless.kernel.org/download/htc_fw/](http://wireless.kernel.org/download/htc_fw/)
