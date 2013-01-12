@@ -1,0 +1,42 @@
+
+---
+layout: post
+title: "在win7系统创建wifi局域网"
+description: "在win7系统创建wifi局域网"
+tags: [win7,wifi]
+tagline: "在win7系统创建wifi局域网"
+uri: /posts/2013/04
+permalink: /posts/2013/04/index.html
+exerpt: |-
+---
+
+#一：在电脑上面的设置，开启无线wifi功能：
+##第一步：以管理员身份运行命令提示符： “开始”---在搜索栏输入“cmd”----右键以“管理员身份运行。
+
+##第二步：在命令行中输入：
+{% highlight bash %}
+netsh wlan set hostednetwork mode=allow ssid=sndnvaps key=sndnvaps
+
+#ssid的后面是用户名，key后面是密码，密码要8位以上，随便你们怎么设置，自己记住就好。mode：是否启用虚拟WiFi网卡，改为disallow则为禁用
+{% endhighlight %}
+
+##第三步：打开“网络和共享中心”——“更改适配器设置”看看是不是多了有多出的这一项“Microsoft Virtual WiFi Miniport Adapter”，如果没有，则把你的无线网卡驱动更新一下即可。无线网卡驱动在控制面板里的“设备管理器”中。
+第四步：此时你可以把那个新多出来的改名为“虚拟WiFi”以方便管理。
+
+<img src="/posts/images/posts/2013/04/virtual-wifi-1.jpg" heigh="95" width="327" title="pic-1" >
+
+
+<img src="/posts/images/posts/2013/04/virtual-wifi-2.jpg" heigh="96" width="276" title="pic-2" >
+
+##第五步：
+选择你目前所连接的网络连接                 然后， 
+右键，打开“属性”，选择“共享”，
+选中图中的第一项，然后在“家庭网络连接”中找到你刚刚建立的“虚拟WiFi”，然后点确定。
+第六步：打开无线网，在命令行中输入：
+{% highlight bash %}
+  netsh wlan start hostednetwork 
+{% endhighlight %}
+
+
+<img src="/posts/images/posts/2013/04/virtual-wifi-3.jpg" heigh="304" width="371" title="pic-3" >
+
